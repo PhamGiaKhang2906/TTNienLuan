@@ -1,8 +1,13 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <p>Hello World</p>
+    <div style={{ textAlign: "center", marginTop: "20px" }}>
+      <Link href="/home">Home</Link>
+      <br />
+      <Link href="/about">About</Link>
+      <br />
+      <Link href="/contact">Contact</Link>
+    </div>
   );
 }
