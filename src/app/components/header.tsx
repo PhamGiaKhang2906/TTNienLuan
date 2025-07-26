@@ -9,7 +9,7 @@ const Header = () => (
   >
     <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-start" }}>
       <span style={{ fontWeight: "bold", fontSize: "1.5rem", marginRight: "32px" }}>
-        ĐẠI HỌC KHOA HỌC HUẾ
+        SHOPEE
       </span>
       <nav style={{ display: "flex" }}>
         <Link href="/home" style={{ margin: "0 12px", fontWeight: "500" }}>Home</Link>
