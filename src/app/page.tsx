@@ -1,6 +1,7 @@
 import Link from "next/link";
 import ProductList from '@/app/components/ProductList';
 import { Product } from '@/app/types/product';
+import "../styles/Home.css";
 
 const products: Product[] = [
 	{
@@ -25,8 +26,8 @@ const products: Product[] = [
 
 export default function HomePage() {
 	return (
-		<div>
-			<h1 style={{ textAlign: 'center' }}>Danh sách sản phẩm</h1>
+		<div className="container">
+			<h1 className="title">DANH SÁCH SẢN PHẨM</h1>
 			<ProductList products={products} />
 		</div>
 	);

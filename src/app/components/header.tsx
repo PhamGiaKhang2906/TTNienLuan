@@ -1,21 +1,33 @@
 import Link from "next/link";
+import { FiShoppingBag, FiSearch } from "react-icons/fi";
+import "../../styles/Header.css";
 
 const Header = () => (
-  <header
-    style={{
-      background: "#f5f5f5",
-      padding: "16px 32px",
-    }}
-  >
-    <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-start" }}>
-      <span style={{ fontWeight: "bold", fontSize: "1.5rem", marginRight: "32px" }}>
-        SHOPEE
-      </span>
-      <nav style={{ display: "flex" }}>
-        <Link href="/home" style={{ margin: "0 12px", fontWeight: "500" }}>Home</Link>
-        <Link href="/about" style={{ margin: "0 12px", fontWeight: "500" }}>About</Link>
-        <Link href="/contact" style={{ margin: "0 12px", fontWeight: "500" }}>Contact</Link>
-      </nav>
+  <header className="header">
+    <div className="container">
+      <div className="header-top">
+        <Link href="/contact">
+          <button className="header-btn">Contact</button>
+        </Link>
+        <Link href="/about">
+          <button className="header-btn">About</button>
+        </Link>
+      </div>
+      <div className="header-main">
+        <span className="header-title">
+          <FiShoppingBag style={{ marginRight: "10px", fontSize: "2rem" }} />
+          SHOPEE
+        </span>
+        <div className="header-search">
+          <input type="text" placeholder="Tìm kiếm sản phẩm..." />
+          <FiSearch className="search-icon" />
+        </div>
+        <Link href="/cart">
+          <button className="cart-btn">
+            <FiShoppingBag style={{ fontSize: "1.7rem" }} />
+          </button>
+        </Link>
+      </div>
     </div>
   </header>
 );

@@ -1,0 +1,12 @@
+.container {
+  width: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
+  box-sizing: border-box;
+}
+.title {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2rem;
+  color: #ff5722;
+}
