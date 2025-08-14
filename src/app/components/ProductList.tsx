@@ -8,7 +8,7 @@ interface ProductListProps {
 
 export default function ProductList({ products }: ProductListProps) {
   return (
-    <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
+    <div className="product-list">
       {products.map((product) => (
         <ProductCard key={product.id} product={product} />
       ))}
